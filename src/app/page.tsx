@@ -38,7 +38,7 @@ export default async function Home() {
   const videos = await getMVRanks();
 
   return (
-    <div className="max-w-lg md:max-w-3xl md:max-w-5xl pt-4 flex flex-col items-center mx-auto">
+    <div className="max-w-lg md:max-w-3xl md:max-w-5xl pt-4 flex flex-col items-center mx-auto overflow-x-hidden">
       {videos.map((video) => (
         <Link
           key={video.taskId}
