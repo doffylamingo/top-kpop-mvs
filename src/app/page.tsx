@@ -25,7 +25,7 @@ const getMVRanks = async () => {
       headers: {
         "content-type": "application/x-www-form-urlencoded",
       },
-      body: `sortType=2&orderCountInPage=150&lastOrderNo=$0`,
+      body: `sortType=2&orderCountInPage=50&lastOrderNo=0`,
       method: "POST",
     },
   );
